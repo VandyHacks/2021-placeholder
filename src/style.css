@@ -269,6 +269,9 @@ main a:hover {
     width: 28px;
     height: 28px;
   }
+  .footer {
+    font-size: 0.6rem;
+  }
 }
 
 @media only screen and (min-width: 1400px), screen and (min-height: 1200px) {

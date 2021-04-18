@@ -1,7 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ffd471ba-feb3-43b7-9a11-d72f89d5a88e/deploy-status)](https://app.netlify.com/sites/vh2020/deploys)
 
-# VandyHacks VII
-Our VandyHacks VII website 
+# VandyHacks 2021 Placeholder site
+Our VandyHacks 2021 placeholder website 
 
 ## Workflow
 ```bash
