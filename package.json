@@ -1,7 +1,7 @@
 {
-  "name": "2020-website",
+  "name": "2021-placeholder",
   "version": "1.0.0",
-  "description": "VandyHacks 2020 Website",
+  "description": "VandyHacks 2021 Placeholder Site",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VandyHacks/2020-website.git"
+    "url": "git+https://github.com/VandyHacks/2021-placeholder.git"
   },
   "author": "VandyHacks 2020",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/VandyHacks/2020-website/issues"
+    "url": "https://github.com/VandyHacks/2021-placeholder/issues"
   },
-  "homepage": "https://github.com/VandyHacks/2020-website#readme",
+  "homepage": "https://github.com/VandyHacks/2021-placeholder#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "parcel-bundler": "^1.12.4",
