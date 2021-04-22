@@ -136,7 +136,7 @@ tsParticles.load("background-stars", {
       }
     },
     size: {
-      value: 2,
+      value: 1.6,
       random: true,
       anim: {
         enable: true,
@@ -150,7 +150,7 @@ tsParticles.load("background-stars", {
       distance: 60,
       color: "#ffffff",
       opacity: 0.7,
-      width: 1.5
+      width: 1.2
     },
     move: {
       enable: true,
@@ -203,10 +203,10 @@ tsParticles.load("background-stars", {
       },
       bubble: {
         distance: 250,
-        size: 6,
+        size: 4.8,
         duration: 2,
         opacity: 0.9,
-        speed: 3
+        speed: 2.4
       },
       repulse: {
         distance: 400,
