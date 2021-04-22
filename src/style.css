@@ -1,12 +1,11 @@
 * {
   overflow-x: hidden;
-  overflow: hidden;
 }
 
 body {
   width: 100vw;
   /* min-height: 100vh; */
-  background-color: #0c164f;
+  background-color: #0c1645;
   color: #eceaee;
 
   font-family: 'Major Mono Display', monospace;
@@ -221,7 +220,7 @@ main a:hover {
   position: absolute;
   z-index: 2;
   width: 100vw;
-  top: calc(86vh + 48px);
+  top: calc(86vh + 49px);
   line-height: 0.7rem;
 }
 
@@ -297,7 +296,7 @@ main a:hover {
     height: 38px;
   } */
   .footer{
-    /* top: calc(87vh + 58px); */
+    top: calc(86vh + 52px);
     font-size: 0.7rem;
   }
 }
