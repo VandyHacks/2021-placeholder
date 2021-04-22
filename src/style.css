@@ -1,15 +1,15 @@
-/* * {
+* {
   overflow-x: hidden;
-} */
+}
 
 body {
   width: 100vw;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: #303b53;
   color: #eceaee;
 
   font-family: 'Major Mono Display', monospace;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   user-select: none;
 }
 
@@ -27,17 +27,17 @@ body {
 
 /* ---- text styling ---- */
 .text {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   width: 100vw;
   position: absolute;
   display: inline-block;
-  top: 38vh;
+  top: 54vh;
 	text-align: center;
 }
 
 /* ---- social icons styling ---- */
 .socials {
-  min-height: 100px;
+  min-height: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -45,12 +45,12 @@ body {
   position: absolute;
   z-index: 1;
   min-width: 100vw;
-  top: 82vh;
+  top: 87vh;
 }
 
 .socials svg {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   border-radius: 14%;
   transition: transform 0.1s ease-in-out;
   overflow: hidden;
@@ -64,9 +64,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 12px;
-  width: 34px;
-  height: 34px;
+  margin: 0 9px;
+  width: 32px;
+  height: 32px;
 }
 
 #facebook-container:hover {
@@ -135,8 +135,7 @@ input {
   width: 100vw;
 
   z-index: 1;
-  width: 100vw;
-  top: 58vh;
+  top: calc(54vh + 1em);
 }
 
 .form__group {
@@ -144,16 +143,16 @@ input {
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
-  width: 350px;
+  width: 335px;
 }
 
 .form__field {
   font-family: inherit;
   width: 100%;
   border: 0;
-  border-bottom: 2px solid #fff;
+  border-bottom: 1.5px solid #fff;
   outline: 0;
-  font-size: 1.0rem;
+  font-size: 0.6rem;
   color: #fff;
   padding: 4px 0;
   background: transparent;
@@ -163,7 +162,7 @@ input {
   color: transparent;
 }
 .form__field:placeholder-shown ~ #form__label {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   cursor: text;
   top: 20px;
 }
@@ -173,7 +172,7 @@ input {
   top: 0;
   display: block;
   transition: 0.2s;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   color: #fff;
 }
 
@@ -191,7 +190,7 @@ input {
   top: 0;
   display: block;
   transition: 0.2s;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   color: #f9a602;
   font-weight: 700;
 }
@@ -210,7 +209,7 @@ main a:hover {
 
 .footer {
   /* margin-bottom: 1vh; */
-  font-size: 0.3rem;
+  font-size: 0.5rem;
   position: absolute;
   width: 100vw;
 
@@ -221,8 +220,8 @@ main a:hover {
   position: absolute;
   z-index: 2;
   width: 100vw;
-  top: 93vh;
-  line-height: 0.8rem;
+  top: calc(87vh + 50px);
+  line-height: 0.7rem;
 }
 
 .footer a {
@@ -239,48 +238,50 @@ main a:hover {
   margin-top: auto;
 }
 
-@media only screen and (max-width: 700px) {
-  .text{
+@media only screen and (max-height: 600px) {
+
+}
+
+@media only screen and (max-width: 700px){
+  /* .text{
     top: 36vh;
   }
   .form {
     top: 70vh
-  }
+  } */
   .form__group {
-    width: 69%;
+    width: 66%;
   }
-  .socials{
-    top: 78vh;
-  }
+
   .socials {
     padding: 0% 1%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     overflow-y: hidden;
   }
   .socials a {
-    margin: 0 7px;
-    width: 32px;
-    height: 32px;
+    margin: 0 5px;
+    width: 29px;
+    height: 29px;
   }
   .socials svg {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
   }
   .footer {
     font-size: 0.6rem;
   }
 }
 
-@media only screen and (min-width: 1400px), screen and (min-height: 1200px) {
-  .text{
+@media only screen and (min-width: 1500px), screen and (min-height: 1200px) {
+  /* .text{
     top: 46vh;
-  }
+  } */
 
   .form__group {
-    width: 420px;
+    width: 390px;
   }
 
   .socials a {
@@ -293,6 +294,7 @@ main a:hover {
     height: 38px;
   }
   .footer{
+    top: calc(87vh + 58px);
     font-size: 0.7rem;
   }
 }
