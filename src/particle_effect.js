@@ -32,7 +32,7 @@ tsParticles.load("logo-stars", {
       distance: 16,
       enable: true,
       opacity: 1,
-      width: 0.7
+      width: 0.8
     },
     move: {
       attract: {

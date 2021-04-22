@@ -135,7 +135,7 @@ input {
   width: 100vw;
 
   z-index: 1;
-  top: calc(54vh + 1em);
+  top: calc(54vh + 1.2em);
 }
 
 .form__group {
@@ -152,7 +152,7 @@ input {
   border: 0;
   border-bottom: 1.5px solid #fff;
   outline: 0;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: #fff;
   padding: 4px 0;
   background: transparent;
@@ -278,13 +278,17 @@ main a:hover {
 }
 
 @media only screen and (min-width: 1500px), screen and (min-height: 1200px) {
-  /* .text{
-    top: 46vh;
-  } */
+  .form{
+    top: calc(54vh + 1.5em);
+  }
+  .form__field {
+    font-size: 0.9em;
+  }
 
   .form__group {
     width: 390px;
   }
+  
 
   /* .socials a {
     margin: 0 10px;
