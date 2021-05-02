@@ -16,7 +16,7 @@ tsParticles.load("logo-stars", {
         distance: 64,
         duration: 2,
         opacity: 1,
-        size: 6.4,
+        size: 5,
         speed: 2.4
       }
     }
@@ -29,10 +29,10 @@ tsParticles.load("logo-stars", {
       blink: false,
       color: "#fff",
       consent: false,
-      distance: 16,
+      distance: 14,
       enable: true,
       opacity: 1,
-      width: 0.8
+      width: 1
     },
     move: {
       attract: {
@@ -53,10 +53,10 @@ tsParticles.load("logo-stars", {
     number: {
       density: {
         enable: false,
-        area: 2000
+        area: 10000
       },
       limit: 0,
-      value: 125
+      value: 150
     },
     opacity: {
       animation: {
@@ -69,7 +69,7 @@ tsParticles.load("logo-stars", {
       value: 1
     },
     shape: {
-      type: ["polygon","polygon", "circle",  "circle",  "circle", "triangle"],
+      type: ["star", "circle",  "circle",  "circle", "triangle"],
     },
     size: {
       animation: {
@@ -109,7 +109,7 @@ tsParticles.load("logo-stars", {
 tsParticles.load("background-stars", {
   particles: {
     number: {
-      value: 60,
+      value: 200,
       density: {
         enable: true,
         value_area: 800
@@ -119,7 +119,7 @@ tsParticles.load("background-stars", {
       value: "#ffffff"
     },
     shape: {
-      type: ["polygon", "circle",  "circle", "triangle", "star"],
+      type: ["star", "circle",  "circle", "circle", "star"],
       stroke: {
         width: 0,
         color: "#000000"
@@ -136,7 +136,7 @@ tsParticles.load("background-stars", {
       }
     },
     size: {
-      value: 1.6,
+      value: 1,
       random: true,
       anim: {
         enable: true,
@@ -147,23 +147,23 @@ tsParticles.load("background-stars", {
     },
     line_linked: {
       enable: true,
-      distance: 60,
+      distance: 45,
       color: "#ffffff",
       opacity: 0.7,
       width: 1.2
     },
     move: {
       enable: true,
-      speed: 0.5,
-      direction: "none",
+      speed: 0.3,
+      direction: "top",
       random: true,
       straight: false,
       out_mode: "out",
       bounce: false,
       attract: {
-        enable: false,
-        rotateX: 0,
-        rotateY: 0
+        enable: true,
+        rotateX: 2000,
+        rotateY: 2000
       }
     }
   },
@@ -181,7 +181,7 @@ tsParticles.load("background-stars", {
       resize: true,
       onhover: {
         enable: true,
-        mode: "bubble",
+        mode: ["bubble", "trail"],
         parallax: {
           enable: true,
           force: 100,
@@ -202,7 +202,8 @@ tsParticles.load("background-stars", {
         }
       },
       bubble: {
-        distance: 250,
+        color: '#e6bb67', //bg color: "#303b53",
+        distance: 100,
         size: 4.8,
         duration: 2,
         opacity: 0.9,
@@ -214,6 +215,10 @@ tsParticles.load("background-stars", {
       },
       push: {
         particles_nb: 1
+      },
+      trail: {
+        delay: .6,
+        quantity: 1
       },
       remove: {
         particles_nb: 2
