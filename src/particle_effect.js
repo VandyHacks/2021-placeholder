@@ -12,7 +12,7 @@ tsParticles.load("logo-stars", {
     },
     modes: {
       bubble: {
-        color: '#f9a602', //bg color: "#303b53",
+        color: ['#f9a602', "e6bb67"], //bg color: "#303b53",
         distance: 64,
         duration: 2,
         opacity: 1,
@@ -23,13 +23,13 @@ tsParticles.load("logo-stars", {
   },
   particles: {
     color: {
-      value: "#fff" // "#eceaee"
+      value: ['#e6bb67', '#e6bb67', '#f6dcb2', '#f6dcb2', '#f6dcb2', 'f6dcb2', "#fff"]
     },
     links: {
       blink: false,
-      color: "#fff",
+      color: ['#e6bb67', '#e6bb67', 'f6dcb2'],
       consent: false,
-      distance: 15,
+      distance: 13,
       enable: true,
       opacity: 1,
       width: 1
