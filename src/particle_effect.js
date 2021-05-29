@@ -1,18 +1,18 @@
-tsParticles.load("logo-stars", {
+tsParticles.load('logo-stars', {
   detectRetina: false,
   fpsLimit: 60,
   interactivity: {
-    detectsOn: "window",
+    detectsOn: 'window',
     events: {
       onHover: {
         enable: true,
-        mode: "bubble"
+        mode: 'bubble'
       },
       resize: true
     },
     modes: {
       bubble: {
-        color: ['#f9a602', "e6bb67"], //bg color: "#303b53",
+        color: ['#f9a602', 'e6bb67'], //bg color: "#303b53",
         distance: 64,
         duration: 2,
         opacity: 1,
@@ -23,7 +23,7 @@ tsParticles.load("logo-stars", {
   },
   particles: {
     color: {
-      value: ['#e6bb67', '#e6bb67', '#f6dcb2', '#f6dcb2', '#f6dcb2', 'f6dcb2', "#fff"]
+      value: ['#e6bb67', '#e6bb67', '#f6dcb2', '#f6dcb2', '#f6dcb2', 'f6dcb2', '#fff']
     },
     links: {
       blink: false,
@@ -43,9 +43,9 @@ tsParticles.load("logo-stars", {
         }
       },
       bounce: false,
-      direction: "none",
+      direction: 'none',
       enable: true,
-      outMode: "bounce",
+      outMode: 'bounce',
       random: false,
       speed: 0.2,
       straight: false
@@ -69,7 +69,7 @@ tsParticles.load("logo-stars", {
       value: 1
     },
     shape: {
-      type: ["star", "circle",  "circle",  "circle", "triangle"],
+      type: ['star', 'circle', 'circle', 'circle', 'triangle']
     },
     size: {
       animation: {
@@ -85,28 +85,27 @@ tsParticles.load("logo-stars", {
   polygon: {
     draw: {
       enable: true,
-      lineColor: "#fff",
-      lineWidth: 0.20
+      lineColor: '#fff',
+      lineWidth: 0.2
     },
     move: {
       radius: 3
     },
-    inlineArrangement: "equidistant",
+    inlineArrangement: 'equidistant',
     scale: 0.6,
-    type: "inline",
+    type: 'inline',
     data: {
-      path: "M1259.83 782.15h-18.44a7.3 7.3 0 00-6.38 4.44l-77.7 209.65-78-209.64a7.32 7.32 0 00-6.39-4.44h-18.44a3.07 3.07 0 00-3.09 4.44l91.19 245.18a6 6 0 00.93 1.6l-9.83 26.53-101.27-273.3a7.3 7.3 0 00-6.38-4.44h-18.44a3.08 3.08 0 00-3.09 4.44l114.16 308a6.59 6.59 0 001.92 2.63 3.1 3.1 0 003.24 2.13h18.44a6.13 6.13 0 002.11-.41 3.18 3.18 0 001.64-.85 6.91 6.91 0 002.63-3.19l114.28-308.32a3.08 3.08 0 00-3.09-4.45zM1354.93 782.15h-18.44a7.3 7.3 0 00-6.38 4.44L1215.83 1095a3.08 3.08 0 003.09 4.44h18.44a7.31 7.31 0 006.38-4.44L1358 786.6a3.08 3.08 0 00-3.07-4.45zM1240.89 960.6h-18.44a7.3 7.3 0 00-6.38 4.44L1167.92 1095a3.07 3.07 0 003.06 4.44h18.51a7.31 7.31 0 006.3-4.33L1244 965a3.07 3.07 0 00-3.11-4.4zM1229.63 940.83h18.44a7.3 7.3 0 006.38-4.44L1310 786.48c.77-2.07-.11-3.8-2-4.29a3.89 3.89 0 00-.42 0H1288a5.22 5.22 0 00-1.5.25 7.78 7.78 0 00-3.3 2.28 5.24 5.24 0 00-.78 1.37l-56.1 151.37c-.25 1.91 1.07 3.37 3.31 3.37z",
+      path:
+        'M1259.83 782.15h-18.44a7.3 7.3 0 00-6.38 4.44l-77.7 209.65-78-209.64a7.32 7.32 0 00-6.39-4.44h-18.44a3.07 3.07 0 00-3.09 4.44l91.19 245.18a6 6 0 00.93 1.6l-9.83 26.53-101.27-273.3a7.3 7.3 0 00-6.38-4.44h-18.44a3.08 3.08 0 00-3.09 4.44l114.16 308a6.59 6.59 0 001.92 2.63 3.1 3.1 0 003.24 2.13h18.44a6.13 6.13 0 002.11-.41 3.18 3.18 0 001.64-.85 6.91 6.91 0 002.63-3.19l114.28-308.32a3.08 3.08 0 00-3.09-4.45zM1354.93 782.15h-18.44a7.3 7.3 0 00-6.38 4.44L1215.83 1095a3.08 3.08 0 003.09 4.44h18.44a7.31 7.31 0 006.38-4.44L1358 786.6a3.08 3.08 0 00-3.07-4.45zM1240.89 960.6h-18.44a7.3 7.3 0 00-6.38 4.44L1167.92 1095a3.07 3.07 0 003.06 4.44h18.51a7.31 7.31 0 006.3-4.33L1244 965a3.07 3.07 0 00-3.11-4.4zM1229.63 940.83h18.44a7.3 7.3 0 006.38-4.44L1310 786.48c.77-2.07-.11-3.8-2-4.29a3.89 3.89 0 00-.42 0H1288a5.22 5.22 0 00-1.5.25 7.78 7.78 0 00-3.3 2.28 5.24 5.24 0 00-.78 1.37l-56.1 151.37c-.25 1.91 1.07 3.37 3.31 3.37z',
       size: {
         width: 2360,
-        height: 2400,
+        height: 2400
       }
-      
     }
   }
 });
 
-
-tsParticles.load("background-stars", {
+tsParticles.load('background-stars', {
   particles: {
     number: {
       value: 200,
@@ -116,13 +115,13 @@ tsParticles.load("background-stars", {
       }
     },
     color: {
-      value: "#ffffff"
+      value: '#ffffff'
     },
     shape: {
-      type: ["star", "circle",  "circle", "circle", "star"],
+      type: ['star', 'circle', 'circle', 'circle', 'star'],
       stroke: {
         width: 0,
-        color: "#000000"
+        color: '#000000'
       }
     },
     opacity: {
@@ -148,17 +147,17 @@ tsParticles.load("background-stars", {
     line_linked: {
       enable: true,
       distance: 45,
-      color: "#ffffff",
+      color: '#ffffff',
       opacity: 0.7,
       width: 1.2
     },
     move: {
       enable: true,
       speed: 0.3,
-      direction: "top",
+      direction: 'top',
       random: true,
       straight: false,
-      out_mode: "out",
+      out_mode: 'out',
       bounce: false,
       attract: {
         enable: true,
@@ -168,20 +167,20 @@ tsParticles.load("background-stars", {
     }
   },
   interactivity: {
-    detect_on: "window",
+    detect_on: 'window',
     events: {
       onDiv: [
         {
           enable: true,
-          selectors: ".titlespace",
-          mode: "bounce",
-          type: "rectangle"
+          selectors: '.titlespace',
+          mode: 'bounce',
+          type: 'rectangle'
         }
       ],
       resize: true,
       onhover: {
         enable: true,
-        mode: ["bubble", "trail"],
+        mode: ['bubble', 'trail'],
         parallax: {
           enable: true,
           force: 100,
@@ -190,7 +189,7 @@ tsParticles.load("background-stars", {
       },
       onclick: {
         enable: true,
-        mode: "push"
+        mode: 'push'
       },
       resize: true
     },

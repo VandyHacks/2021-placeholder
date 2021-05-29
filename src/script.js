@@ -1,10 +1,6 @@
 import faviconSwitcher from 'favicon-switcher';
 
-const phrases = [
-	"VAnderbilt uniVersity",
-  "october 2-4 2020",
-	"All hAckers Welcome",
-];
+const phrases = ['VAnderbilt uniVersity', 'october 2-4 2020', 'All hAckers Welcome'];
 
 // ——————————————————————————————————————————————————
 // TextScramble
@@ -64,7 +60,6 @@ class TextScramble {
     return this.chars[Math.floor(Math.random() * this.chars.length)];
   }
 }
-
 
 const el = document.querySelector('.text');
 const fx = new TextScramble(el);
