@@ -23,13 +23,13 @@ emailField.addEventListener('keyup', e => {
     var label = document.getElementById('form__label');
     // Validate email address
     if (emailField.validity.typeMismatch) {
-      label.innerHTML = 'please enter a valid email address';
+      label.innerHTML = 'Please enter a valid email address';
     } else {
       // Send to firebase
       saveEmail();
       // Feedback to user that submission was successful
       emailField.value = '';
-      label.innerHTML = 'thank you for subscribing!';
+      label.innerHTML = 'Thank you for subscribing!';
     }
   }
 });

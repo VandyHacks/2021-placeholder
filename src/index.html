@@ -66,7 +66,7 @@
         >
           mlh code of conduct
         </a>
-        | ©2021 VAndyhAcks
+        | ©2021 VandyHacks
         <br />
         <br />
         this site is powered by
@@ -169,7 +169,7 @@
             id="email"
             required
           />
-          <label for="email" id="form__label">get email updates</label>
+          <label for="email" id="form__label">Get Email Updates</label>
         </div>
       </div>
 
@@ -177,11 +177,32 @@
         <div id="logo-stars"></div>
         <div id="background-stars"></div>
         <div class="text">
-          <noscript>
+          <!-- <noscript>
             <h1>VAnderbilt uniVersity</h1>
             <h1>october 2-4 2021</h1>
             <h1>All hAckers Welcome</h1>
-          </noscript>
+          </noscript> -->
+
+          <!-- The three texts -->
+          <div id="text-container">
+            <span id="text1"></span>
+            <span id="text2"></span>
+          </div>
+
+          <!-- The SVG filter used to create the merging effect -->
+          <svg id="filters">
+            <defs>
+              <filter id="threshold">
+                <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+                <feColorMatrix in="SourceGraphic"
+                    type="matrix"
+                    values="1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            0 0 0 255 -140" />
+              </filter>
+            </defs>
+          </svg>
         </div>
       </div>
     </main>
