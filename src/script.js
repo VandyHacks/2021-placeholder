@@ -83,11 +83,13 @@ const elts = {
 
 // The strings to morph between. You can change these to anything you want!
 const texts = [
-	'Vanderbilt University', 'October 2-4 2021', 'All Hackers Welcome'
+	'Vanderbilt University', 
+	'October 2rd-4th 2021', 
+	'All Hackers Welcome'
 ];
 
 // Controls the speed of morphing.
-const morphTime = 3.1;
+const morphTime = 2;
 const cooldownTime = .25;
 
 let textIndex = texts.length - 1;
