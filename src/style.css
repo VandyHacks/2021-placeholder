@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:800&display=swap');
+
 * {
   overflow-x: hidden;
 }
@@ -217,6 +219,7 @@ main a:hover {
   padding: 0;
   background-color: #fff;
   opacity: 87%;
+  z-index: 10000;
 }
 
 .nav ul {
@@ -264,8 +267,8 @@ main a:hover {
   position: absolute;
   z-index: 2;
   width: 100vw;
-  top: calc(86vh + 55px);
-  line-height: 0.5rem;
+  top: calc(86vh + 60px);
+  line-height: 0.6rem;
 }
 
 .footer a {
@@ -301,6 +304,10 @@ main a:hover {
   .form {
     top: 70vh
   } */
+  .form {
+    top: calc(54vh + 5.6rem);
+  }
+  
   .form__group {
     width: 66%;
   }
@@ -337,7 +344,7 @@ main a:hover {
 
 @media only screen and (min-width: 1500px), screen and (min-height: 1200px) {
   .form {
-    top: calc(54vh + 1.5em);
+    top: calc(54vh + 2.4rem);
   }
   .form__field {
     font-size: 0.9em;
@@ -372,21 +379,20 @@ main a:hover {
   width: 100vw;
   position: absolute;
 
-  top: calc(54vh - 108px);
+  top: calc(54vh - 122px);
   bottom: 0;
 	
 	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
   filter: url(#threshold) blur(0.6px);
 }
 
-/* Your average text styling */
+/* average text styling */
 #text1, #text2 {
 	position: absolute;
   width: 100vw;
-  /* font-family: 'Raleway', sans-serif; */
-  font-family: 'Montserrat';
-  font-weight: 800;
-	font-size: 1.7rem;
+  font-family: 'Raleway', sans-serif;
+
+	font-size: 2.5rem;
 	display: inline-block;
   text-align: center;
 	user-select: none;
