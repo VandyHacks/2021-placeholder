@@ -383,7 +383,7 @@ main a:hover {
   bottom: 0;
 	
 	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
-  filter: url(#threshold) blur(0.6px);
+  filter: url(#threshold) blur(0px);
 }
 
 /* average text styling */
@@ -392,7 +392,7 @@ main a:hover {
   width: 100vw;
   font-family: 'Raleway', sans-serif;
 
-	font-size: 2.4rem;
+	font-size: 2.6rem;
 	display: inline-block;
   text-align: center;
   user-select: none;
