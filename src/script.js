@@ -84,7 +84,7 @@ const elts = {
 // The strings to morph between. You can change these to anything you want!
 const texts = [
 	'Vanderbilt University', 
-	'October 2rd-4th 2021', 
+	'October 8th-10th 2021', 
 	'All Hackers Welcome'
 ];
 
