@@ -6,4 +6,3 @@
   from = "/*"
   to = "https://xy-website.netlify.app/:splat"
   status = 200
-  force = true
