@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+
 * {
   overflow-x: hidden;
 }
@@ -8,7 +10,7 @@ body {
   background-color: #0c1645;
   color: #eceaee;
 
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Montserrat', monospace;
   font-size: 1.2rem;
   user-select: none;
 }
@@ -29,12 +31,12 @@ body {
 
 /* ---- text styling ---- */
 .text {
-  /* margin-top: 100px; */
+  /* margin-top: 100px;
   width: 100vw;
   position: absolute;
   display: inline-block;
   top: 54vh;
-  text-align: center;
+  text-align: center; */
 }
 
 /* ---- social icons styling ---- */
@@ -210,12 +212,14 @@ main a:hover {
 /* ----- Nav Bar ----- */
 
 .nav {
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   padding: 0;
   background-color: #fff;
-  opacity: 90%;
+  opacity: 87%;
+  z-index: 10000;
 }
 
 .nav ul {
@@ -251,7 +255,7 @@ main a:hover {
 
 .footer {
   /* margin-bottom: 1vh; */
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   position: absolute;
   width: 100vw;
   font-family: 'Montserrat';
@@ -263,8 +267,8 @@ main a:hover {
   position: absolute;
   z-index: 2;
   width: 100vw;
-  top: calc(86vh + 49px);
-  line-height: 0.7rem;
+  top: calc(86vh + 60px);
+  line-height: 0.6rem;
 }
 
 .footer a {
@@ -300,6 +304,10 @@ main a:hover {
   .form {
     top: 70vh
   } */
+  .form {
+    top: calc(54vh + 5.6rem);
+  }
+  
   .form__group {
     width: 66%;
   }
@@ -330,13 +338,13 @@ main a:hover {
     height: 24px;
   }
   .footer {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }
 
 @media only screen and (min-width: 1500px), screen and (min-height: 1200px) {
   .form {
-    top: calc(54vh + 1.5em);
+    top: calc(54vh + 2.4rem);
   }
   .form__field {
     font-size: 0.9em;
@@ -357,6 +365,36 @@ main a:hover {
   } */
   .footer {
     top: calc(86vh + 52px);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
+}
+
+/* new text effect */
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+#text-container {
+	/* Center the text in the viewport. */
+  margin: auto;
+  margin-top: 100px;
+  width: 100vw;
+  position: absolute;
+
+  top: calc(54vh - 122px);
+  bottom: 0;
+	
+	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+  filter: url(#threshold) blur(0px);
+}
+
+/* average text styling */
+#text1, #text2 {
+	position: absolute;
+  width: 100vw;
+  font-family: 'Raleway', sans-serif;
+
+	font-size: 2.6rem;
+	display: inline-block;
+  text-align: center;
+  user-select: none;
+  color: white;
 }
